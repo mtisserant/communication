@@ -1,0 +1,15 @@
+Titre : Apéro PHP à LYon le mardi 29 octobre
+Catégorie : PHP
+
+Un apéro PHP aura lieu à Lyon le mardi 29 octobre à partir de 19h à l'Antre-Autre (11 rue terme, Lyon 1er). Les apéros PHP sont ouverts à tous, quelque soit le niveau. Le but est de rencontrer d’autres développeurs PHP de la région lyonnaise, de boire un verre ensemble, de discuter de tout et de rien, en fonction des envies de tout le monde
+
+Lors de cette soirée, Matthieu Napoli nous parlera d’injection de dépendance, en nous expliquant tout d’abord le principe puis en effectuant un état des lieux des différents containers disponibles.
+
+Plus d'informations sont disponibles sur le site de l'AFUP Lyon.
+
+    Page de l'apéro PHP 
+    Annonce sur le site de l'AFUP de Lyon
+
+
+
+
