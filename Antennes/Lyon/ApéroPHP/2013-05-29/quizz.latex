@@ -1,0 +1,316 @@
+\documentclass{beamer}
+ 
+\usepackage[frenchb]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{verbatim}
+
+\usetheme{Warsaw}
+ 
+ 
+\begin{document}
+
+
+	\section{Intro}
+ 
+		\begin{frame}
+			Apéro PHP du 29 mai 2013
+		\end{frame}
+
+		\begin{frame}
+			\includegraphics{../logo-afup.png}
+
+			Appel à conférenciers pour le ForumPHP
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{Prochains évènements} 
+
+			\includegraphics{../AFUP_LYON_LOGO.jpeg}
+
+			\begin{itemize}
+				\item 12 juin 2013 à 19h30 : Conférence EZPublish
+				\item 26 juin 2013 à 19h00 : Apéro PHP
+			\end{itemize}
+		\end{frame}
+
+
+	\section{Quizz}
+
+		\begin{frame}
+			Quizz !
+		\end{frame}
+	
+		\subsection{Questions}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 1} 
+
+				Que fait le code suivant (switch) ?
+				\begin{verbatim}
+					<?php
+						$a = 2;
+						switch ($a) {
+							default: echo 'un'; break;
+							 case 1: echo 'deux'; break;
+							 case 2: echo 'trois'; break;
+							 case 3: echo 'quatre'; break;
+						}
+					?>
+				\end{verbatim}
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 2} 
+
+				Que donne ce code ?
+				\begin{verbatim}
+					<?php
+	$res = array(
+       array('id' => 2),
+       array('id' => 3907),
+       array('id' => 7814),
+       array('id' => 2),
+   );
+$unique = array_unique($res);
+var_dump($unique);
+					?>
+				\end{verbatim}
+			\end{frame}
+
+
+			\begin{frame}[fragile]
+				\frametitle{Question 3}
+				Quels sont les paramètres de la fonction mktime() ?
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 4} 
+				Combien y a-t-il de fonctions commençant par array\_* ?
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 5} 
+				Quelle est la dernière version stable de PHP ?
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 6} 
+				Quel est le but de la directive open\_basedir ?
+				\begin{enumerate}
+  					\item Fournir une liste de répertoires où PHP devrait chercher des fichiers.
+					\item Fournir une liste de répertoires depuis lequel PHP peut ouvrir des fichiers.
+					\item Fournir une liste de répertoires depuis lequel PHP ne peut pas ouvrir de fichiers.
+					\item Indique le répertoire où se trouvent les extensions PHP
+				\end{enumerate}
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 7} 
+				Quelle est la valeur par défaut de la directive ‘memory\_limit’ ?
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 8} 
+				Quelle fonction renvoie l'heure du lever du soleil pour un jour et un endroit donné ?
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 9} 
+				Quelle constante permet d'accéder à la valeur du séparateur de répertoire ?
+				\begin{enumerate}
+  					\item DIRECTOY\_SEP
+					\item SEPARATOR\_DIRECTORY
+					\item DIRECTORY\_SEPARATOR
+					\item SEP\_DIRECTORY
+					\item DIR\_SEP
+					\item DIR\_SEPARATOR
+					\item SEP\_DIR
+					\item SEPARATOR\_DIR
+				\end{enumerate}
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 10} 
+				A quoi sert le troisème paramètre de la fonction define() ?
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 11} 
+				Pouvez vous écrire l'opérateur de résolution de portée ?
+
+				\_\_\_M\_\_\_M    \_\_\_\_\_\_\_\_\_\_M 
+			\end{frame}
+
+
+			\begin{frame}[fragile]
+				\frametitle{Question 12} 
+				Combien de caractères comprend la chaîne renvoyée par uniqid() ?
+			\end{frame}
+
+
+			\begin{frame}[fragile]
+				\frametitle{Question 13} 
+				Citez les release managers de la version 5.5 de PHP.
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 14} 
+				Laquelle de ces interfaces permet de passer un objet à une boucle foreach ?
+				\begin{enumerate}
+  					\item ArrayObject
+					\item Iterator
+					\item ArrayList
+					\item Hashtable
+				\end{enumerate}
+			\end{frame}
+
+
+		\subsection{Réponses}
+
+			\begin{frame}
+				Réponses
+			\end{frame}
+	
+			\begin{frame}[fragile]
+				\frametitle{Reponse 1} 
+
+				Que fait le code suivant (switch) ?
+				\begin{verbatim}
+					<?php
+						$a = 2;
+						switch ($a) {
+							default: echo 'un'; break;
+							 case 1: echo 'deux'; break;
+							 case 2: echo 'trois'; break;
+							 case 3: echo 'quatre'; break;
+						}
+					?>
+				\end{verbatim}
+				Réponse : 'trois'
+			\end{frame}
+
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 2} 
+
+				Que donne ce code ?
+				\begin{verbatim}
+					<?php
+	$res = array(
+       array('id' => 2),
+       array('id' => 3907),
+       array('id' => 7814),
+       array('id' => 2),
+   );
+$unique = array_unique($res);
+var_dump($unique);
+					?>
+				\end{verbatim}
+				Réponse : 
+				\begin{verbatim}
+array(0 => array('id' => 2));
+				\end{verbatim}
+			\end{frame}
+ 
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 3} 
+				Quels sont les paramètres de la fonction mktime() ?
+				Réponse : 
+				\begin{verbatim}
+int mktime ([ int $hour = date("H") [, int $minute = date("i") [, int $second = date("s") [, int $month = date("n") [, int $day = date("j") [, int $year = date("Y") [, int $is_dst = -1 ]]]]]]] )
+				\end{verbatim}
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 4}
+				Combien y a-t-il de fonctions commençant par array\_* ?
+				Réponse : 51
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 5} 
+				Quelle est la dernière version stable de PHP ?
+				Réponse : 5.4.15 
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 6} 
+				Quel est le but de la directive open\_basedir ?
+				Réponse 2 : Fournir une liste de répertoires depuis lequel PHP peut ouvrir des fichiers.
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 7} 
+				Quelle est la valeur par défaut de la directive ‘memory\_limit’ ?
+				Réponse : 128M
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 8} 
+				Quelle fonction renvoie l'heure du lever du soleil pour un jour et un endroit donné ?
+				Réponse : date\_sunrise
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 9} 
+				Quelle constante permet d'accéder à la valeur du séparateur de répertoire ?
+				\begin{enumerate}
+  					\item DIRECTOY\_SEP
+					\item SEPARATOR\_DIRECTORY
+					\item DIRECTORY\_SEPARATOR
+					\item SEP\_DIRECTORY
+					\item DIR\_SEP
+					\item DIR\_SEPARATOR
+					\item SEP\_DIR
+					\item SEPARATOR\_DIR
+				\end{enumerate}
+				Réponse : 3
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 10} 
+				A quoi sert le troisème paramètre de la fonction define() ?
+				Réponse : boolean , \$is\_case\_sensitive
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 11} 
+				Pouvez vous écrire l'opérateur de résolution de portée ? 
+
+				\_\_\_M\_\_\_M    \_\_\_\_\_\_\_\_\_\_M 
+
+
+				Réponse : Paamayim Nekudotayim
+			\end{frame}
+
+
+			\begin{frame}[fragile]
+				\frametitle{Reponse 12} 
+				Combien de caractères comprend la chaîne renvoyée par uniqid() ?
+				Réponse : 13 sauf si param MORE\_ENTROPY est à true, en ce cas 23 chars
+			\end{frame}
+
+
+			\begin{frame}[fragile]
+				\frametitle{Question 13} 
+				Citez les release managers de la version 5.5 de PHP.
+
+				Réponse : David Soria Parra et Julien Pauli
+			\end{frame}
+
+			\begin{frame}[fragile]
+				\frametitle{Question 14}
+				Laquelle de ces interfaces permet de passer un objet à une boucle foreach ?
+				\begin{enumerate}
+  					\item ArrayObject
+					\item Iterator
+					\item ArrayList
+					\item Hashtable
+				\end{enumerate}
+				Réponse : 2 - Iterator
+			\end{frame}
+
+
+\end{document}

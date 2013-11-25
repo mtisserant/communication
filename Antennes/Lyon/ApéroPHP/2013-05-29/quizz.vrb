@@ -1,0 +1,9 @@
+\frametitle {Question 14}
+Laquelle de ces interfaces permet de passer un objet à une boucle foreach ?
+\begin{enumerate}
+   \item ArrayObject
+\item Iterator
+\item ArrayList
+\item Hashtable
+\end{enumerate}
+Réponse : 2 - Iterator
