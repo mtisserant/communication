@@ -1,0 +1,19 @@
+Titre : AFUP Lyon - 28 octobre : conférence sur Hoa
+Catégorie : PHP
+
+L'antenne lyonnaise de l'AFUP (Association Française des Utilisateurs de PHP) organise le 28 octobre prochain une conférence sur HOA. Hoa est un ensemble de bibliothèques PHP modulaires, extensibles et structurées. De plus, Hoa se veux être un pont entre le monde de la recherche et de l'industrie.
+
+Lors de cette conférence, Ivan Enderlin (créateur du projet) et Julien Bianchi (contributeur et hoacker) nous présenteront Hoa : qu'est-ce que c'est, comment l'installer, que peut-on faire avec, qui l'utilise ? Puis, certaines bibliothèques phares seront abordées pour illustrer des usages quotidiens, comme Hoa\Websocket, Hoa\Ruler ou encore Hoa\Praspel et Hoathis\Atoum pour un aspect recherche et test.
+
+La conférence aura lieu dans le grand amphithéatre d’Epitech Lyon, au 86 boulevard Marius Vivier-Merle 69003 Lyon, à 19h00 le lundi 28 octobre 2013.
+
+Les inscriptions à cette conférence gratuite se font sur cette page.
+
+    Article sur lyon.afup.org http://lyon.afup.org/2013/10/01/conference-sur-hoa-le-28-octobre-a-19h00/
+    Page d'inscription à la conférence http://afup-lyon-hoa.eventbrite.fr/
+    Page de présentation d'Hoa : http://hoa-project.net/
+    Plan d'accès http://www.openstreetmap.org/?mlat=45.754774&mlon=4.858806&zoom=18#map=18/45.75477/4.85881
+
+
+
+

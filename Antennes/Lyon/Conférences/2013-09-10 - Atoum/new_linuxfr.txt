@@ -1,0 +1,19 @@
+Titre : PHP AFUP Lyon - 10 septembre : conférence sur atoum
+Catégorie : PHP
+
+L'antenne lyonnaise de l'AFUP (Association Française des Utilisateurs de PHP) organise le 10 septembre prochain une conférence sur le framework de tests unitaires "atoum". Celle-ci sera animée par Frédéric Hardy et Julien Bianchi.
+
+Atoum est un framework de tests unitaires pour PHP, simple à mettre en oeuvre, qui simplifie l’écriture des tests unitaires et qui permet d’écrire des tests fiables, lisibles et clairs.
+
+La conférence aura lieu dans le grand amphithéatre d’Epitech Lyon, au 86 boulevard Marius Vivier-Merle 69003 Lyon, à 19h30 le 10 septembre 2013.
+
+Les inscriptions à cette conférence gratuite se font sur cette page.
+
+    Article sur lyon.afup.org TODO
+    Page d'inscription à la conférence TODO
+    Page github https://github.com/atoum/atoum
+    Plan d'accès http://www.openstreetmap.org/?mlat=45.754774&mlon=4.858806&zoom=18#map=18/45.75477/4.85881
+
+
+
+
