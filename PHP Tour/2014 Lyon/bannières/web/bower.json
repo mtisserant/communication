@@ -1,0 +1,9 @@
+{
+  "name": "DIYBanner",
+  "dependencies": {
+    "Snap.svg": "master",
+    "saveSvgAsPng": "git@github.com:exupero/saveSvgAsPng.git",
+    "FlexiColorPicker": "git@github.com:DavidDurman/FlexiColorPicker.git",
+    "bootstrap": "master"
+  }
+}
