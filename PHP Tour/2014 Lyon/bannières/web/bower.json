@@ -1,8 +1,13 @@
 {
   "name": "DIYBanner",
+  "//": {
+    "//": "first saveSvgAsPng was part of bower dependencies",
+    "//": "but many patches have been made for our simple case and higher compatibility",
+    "//": "now a forked version is located in interface folder",
+    "saveSvgAsPng": "git@github.com:exupero/saveSvgAsPng.git"
+  },
   "dependencies": {
     "Snap.svg": "master",
-    "saveSvgAsPng": "git@github.com:exupero/saveSvgAsPng.git",
     "FlexiColorPicker": "git@github.com:DavidDurman/FlexiColorPicker.git",
     "bootstrap": "master"
   }
