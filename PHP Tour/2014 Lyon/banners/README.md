@@ -12,8 +12,8 @@ bower install
 
 ## Compatibilité navigateurs
 
-✓ : test concluant, la bannière est bien téléchargée.
-? : pas encore testé.
+✓ : test concluant, la bannière est bien téléchargée.  
+? : pas encore testé.  
 tiret : non disponible pour cette plate-forme.
 
 |   | Windows | Mac OS | Ubuntu |
