@@ -4,11 +4,11 @@
     "//": "first saveSvgAsPng was part of bower dependencies",
     "//": "but many patches have been made for our simple case and higher compatibility",
     "//": "now a forked version is located in interface folder",
-    "saveSvgAsPng": "git@github.com:exupero/saveSvgAsPng.git"
+    "saveSvgAsPng": "https://github.com/exupero/saveSvgAsPng.git"
   },
   "dependencies": {
     "Snap.svg": "master",
-    "FlexiColorPicker": "git@github.com:DavidDurman/FlexiColorPicker.git",
+    "FlexiColorPicker": "https://github.com/DavidDurman/FlexiColorPicker.git",
     "bootstrap": "master"
   }
 }
