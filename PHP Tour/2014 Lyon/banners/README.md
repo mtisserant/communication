@@ -4,7 +4,7 @@ Interface simple permettant de créer une bannière web pour le PHP Tour Lyon av
 
 HTML/Javascript uniquement.
 
-## installation
+## Installation
  
 ```
 bower install
@@ -13,13 +13,15 @@ bower install
 ## Compatibilité navigateurs
 
 ✓ : test concluant, la bannière est bien téléchargée.  
-? : pas encore testé.  
-tiret : non disponible pour cette plate-forme.
+✕ : non fonctionnel.  
+&#45; : non disponible pour cette plate-forme.
 
 |   | Windows | Mac OS | Ubuntu |
 |--:|:-------:|:------:|:------:|
-| Chrome  | ? | ✓ | ? |
-| Firefox | ? | ✓ | ? |
-| IE      | ? | - | - |
-| Safari  | ? | [issue 28](https://github.com/afup/communication/issues/28) | - |
-| Opéra   | ? | ✓ | ? |
+| Chrome  | ✓ | ✓(1) | ✓ |
+| Firefox | ✓ | ✓ | ✓ |
+| IE10 (Windows 7)      | [issue 30](https://github.com/afup/communication/issues/30) | - | - |
+| Safari  | - | [issue 28](https://github.com/afup/communication/issues/28) | - |
+| Opéra   | ✓ | ✓ | ✕ |
+
+✓(1) Pas toujours fonctionnel, même à configuration identique.
