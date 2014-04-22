@@ -20,10 +20,10 @@ var presets = {
     afup: {label:'PHP Tour', primary:'#1f3574', secondary:'#5589de', ternary:'#fcfcfc'},
     ol: {label:'OL', primary:'#1c5bb0', secondary:'#d90114', ternary:'#ffffff'},
     bob: {label:'Jamaica', primary:'#000000', secondary:'#308a2a', ternary:'#f9da00'},
+    fluo: {label:'Fluo', primary:'#00ff9e', secondary:'#f81aa2', ternary:'#ffff00'},
     yes: {label:'Yes we can', primary:'#00314F', secondary:'#E70000', ternary:'#FDE7A3'},
     kitty: {label:'Hello kitty', primary:'#f81aa2', secondary:'#000000', ternary:'#ffffff'},
     sixties: {label:'Années 60', primary:'#431e00', secondary:'#ff6f00', ternary:'#fff699'},
-    fluo: {label:'Fluo', primary:'#00ff9e', secondary:'#f81aa2', ternary:'#ffff00'},
     ironman: {label:'Iron Man', primary:'#990000', secondary:'#F5D300', ternary:'#ffffff'}
 };
 
