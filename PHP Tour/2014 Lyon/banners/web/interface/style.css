@@ -13,20 +13,69 @@
 
 html {
     font-family: 'Raleway', sans-serif;
-    background: #222222;
+    background: white url(http://afup.org/templates/phptourlyon2014/medias/images/bg-global.png) repeat;
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    color: #ccc;
-    background: #666666; /* Old browsers */
-    background: -moz-linear-gradient(top,  #666666 1%, #222222 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#666666), color-stop(100%,#222222)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #666666 1%,#222222 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #666666 1%,#222222 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #666666 1%,#222222 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #666666 1%,#222222 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#666666', endColorstr='#222222',GradientType=0 ); /* IE6-9 */
+    color: #444;
+    background: white url(http://afup.org/templates/phptourlyon2014/medias/images/bg-global.png) repeat;
+}
+
+/* header */
+.header {
+    background:url(http://afup.org/templates/phptourlyon2014/medias/images/bg-header.png) no-repeat center top;
+    height:160px;
+    position:relative;
+    z-index:9999;
+}
+
+.header-content {
+    width:980px;
+    margin:0 auto;
+}
+
+.header h1.logo {
+    margin-top: 0;
+    padding-top:1px;
+}
+
+.header .logo a {
+    float:left;
+    background:url(http://afup.org/templates/phptourlyon2014/medias/images/logo.png) no-repeat left top;
+    width:244px;
+    height:94px;
+    display:block;
+    text-indent:-9999px;
+    margin: 16px 0 0 20px;
+
+}
+
+.header .description {
+    float:left;
+    width:600px;
+    margin: -10px 0 0 80px;
+}
+
+.header .description  h1 {
+    font: 24px/1.2em 'MuseoSans500', Helvetica, Arial, sans-serif;
+    color:#FFF;
+    margin-bottom:10px;
+    text-shadow:0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.header .description  p {
+    color:#FFF;
+}
+
+.header .description a {
+    color:#FFF;
+}
+
+/* Page body */
+.banner-container {
+    width: 980px;
+    margin: auto;
 }
 
 h1 {
@@ -38,17 +87,21 @@ h1 {
 }
 
 .step {
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4) inset;
-    margin-bottom: 1.5em;
-    padding: 10px 20px 10px 30px;
+    position: relative;
+    margin: 2em 0;
+    padding: 3em 20px 10px 30px;
+    background-color: rgba(255, 255, 255, 1);
     border-radius: 5px;
 }
 
 .step h3 {
+    position: absolute;
+    top: -0.4em;
+    left: -1em;
     padding: 0;
     margin-top: 0;
-    margin-left: -20px;
     line-height: 2em;
+    text-shadow: 0 1px rgba(255, 255, 255, 0.5);
 } 
 
 .step h3 span {
@@ -60,6 +113,7 @@ h1 {
     background: #00a9f7;
     margin-right: 0.5em;
     text-align: center;
+    box-shadow: 0 0.2em 0.2em rgba(0, 0, 0, 0.3);
 }
 
 /* presets */
@@ -81,6 +135,8 @@ h1 {
     margin-bottom: 1em;
 }
 
+/* Color Pickers */
+
 #pickers {
     position: relative;
     left: 50%;
@@ -90,6 +146,14 @@ h1 {
 }
 
 #pickers .cp-small {
-    margin-right: 10px;
-    background-color: transparent;
+    background-color: rgba(0, 0, 0, 0);
+    padding-left: 50px;
+    width: 240px;
+}
+
+.cp-small .picker-indicator {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    height: 4px;
+    width: 4px;
 }
