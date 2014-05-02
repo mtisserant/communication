@@ -116,7 +116,7 @@ function save() {
 /* build interface */
 //setting default banner
 var s = Snap('#banner');
-Snap.load('banners/base_728x90_platinum.svg', function(f) {
+Snap.load('banners/728x90/platinum.svg', function(f) {
     svg = s.append(f);
 });
 

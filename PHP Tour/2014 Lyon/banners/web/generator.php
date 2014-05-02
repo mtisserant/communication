@@ -15,7 +15,7 @@ if (!$svg) {
 // colors check
 $colorNames = array('primaryColor', 'secondaryColor', 'ternaryColor');
 foreach ($colorNames as $colorName) {
-    if (!isset($_GET[$colorName]) || !preg_match('/^[0-9a-f]{6}$/', $_GET[$colorName])) {
+    if (!isset($_GET[$colorName]) || !preg_match('/^(?:[0-9a-fA-F]{3}){1,2}$/', $_GET[$colorName])) {
         header('HTTP/1.0 400 Bad Request', true, 400);
         die('invalid data : '.__LINE__);
     }
@@ -36,6 +36,8 @@ $image->readImageBlob($svg);
 $image->setImageFormat("png24");
 
 header('Content-type:image/png');
+header("Content-Transfer-Encoding: Binary");
+header("Content-disposition: attachment; filename=\"PHPTourLyon2014_banner_728x90.png\"");
 echo $image->getImage();
 
 $image->clear();
