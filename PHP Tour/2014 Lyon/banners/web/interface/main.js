@@ -3,13 +3,17 @@ var bannerSet = {
     formats: {
         leaderboard: {
             label: 'Bannière longue 728x90',
+            dimensions: {
+                width: 728,
+                height: 90
+            },
             badges: {
-                platinum: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Platine', basename: 'base_728x90_platinum'},
-                gold: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Or', basename: 'base_728x90_gold'},
-                silver: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Argent', basename: 'base_728x90_silver'},
-                bronze: {label: '<span class="glyphicon glyphicon-star"></span> Bronze', basename: 'base_728x90_bronze'},
-                love: {label: '<span class="glyphicon glyphicon-heart"></span> I Love PHP', basename: 'base_728x90_love'},
-                forever: {label: '<span class="glyphicon glyphicon-star-empty"></span> PHP Forever', basename: 'base_728x90_forever'}
+                platinum: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Platine', basename: 'platinum'},
+                gold: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Or', basename: 'gold'},
+                silver: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Argent', basename: 'silver'},
+                bronze: {label: '<span class="glyphicon glyphicon-star"></span> Bronze', basename: 'bronze'},
+                love: {label: '<span class="glyphicon glyphicon-heart"></span> I Love PHP', basename: 'love'},
+                forever: {label: '<span class="glyphicon glyphicon-star-empty"></span> PHP Forever', basename: 'forever'}
             }
         }
     }
@@ -31,14 +35,18 @@ var presets = {
 var primaryColor = '#150e08';
 var secondaryColor = '#c75a19';
 var ternaryColor = '#fceac2';
+var format = '728x90';
+var badge = 'love';
 var svg;
 
 function loadSvg(elem)
 {
+    badge = elem.value;
     $('#banner').remove();
     $('#canvas').append('<svg id="banner" width="728" height="90"></svg>');
     var s = Snap('#banner');
-    Snap.load('banners/' + elem.value + '.svg', function(f) {
+    console.log('banners/' + format + '/' + badge + '.svg');
+    Snap.load('banners/' + format + '/' + badge + '.svg', function(f) {
         svg = s.append(f);
     });
 }
@@ -56,23 +64,25 @@ function changeTheme(theme){
 function updateSvgColors()
 {
     Snap.selectAll('.primary').attr({
-        fill: primaryColor
+        style: 'fill:'+primaryColor
     });
     Snap.selectAll('.primary path').attr({
-        fill: primaryColor
+        style: 'fill:'+primaryColor
     });
     Snap.selectAll('.secondary').attr({
-        fill: secondaryColor
+        style: 'fill:'+secondaryColor
     });
     Snap.selectAll('.secondary path').attr({
-        fill: secondaryColor
+        style: 'fill:'+secondaryColor
     });
     Snap.selectAll('.ternary').attr({
-        fill: ternaryColor
+        style: 'fill:'+ternaryColor
     });
     Snap.selectAll('.ternary path').attr({
-        fill: ternaryColor
+        style: 'fill:'+ternaryColor
     });
+
+
 }
 
 function updatePrimaryColor(hex)
@@ -92,7 +102,15 @@ function updateTernaryColor(hex)
 }
 
 function save() {
-    saveSvgAsPng(document.getElementById("banner"), "banner.png");
+    var query = $.param({
+        format: '728x90',
+        badge: badge,
+        primaryColor: primaryColor.substring(1),
+        secondaryColor: secondaryColor.substring(1),
+        ternaryColor: ternaryColor.substring(1)
+    });
+
+    window.location.href = 'generator.php?'+query;
 }
 
 /* build interface */
