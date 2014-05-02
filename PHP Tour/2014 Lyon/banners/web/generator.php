@@ -1,12 +1,12 @@
 <?php
 // file path control
-if (!isset($_GET['badge']) || !preg_match('/^[a-z]+$/', $_GET['badge'])) {
+if (!isset($_GET['badge']) || !preg_match('/^[a-z]+$/', $_GET['badge']) || !isset($_GET['format']) || !preg_match('/^[a-z0-9]+$/', $_GET['format'])) {
     header('HTTP/1.0 400 Bad Request', true, 400);
     die('invalid data : '.__LINE__);
 }
 
 // file content check
-$svg = file_get_contents('banners/base_728x90_'.$_GET['badge'].'_clean.svg');
+$svg = file_get_contents('banners/'.$_GET['format'].'/'.$_GET['badge'].'.svg');
 if (!$svg) {
     header('HTTP/1.0 400 Bad Request', true, 400);
     die('invalid data : '.__LINE__);
@@ -24,7 +24,7 @@ foreach ($colorNames as $colorName) {
 
 // update colors
 // SVG paths are stylised through CSS, with three colors
-// SVG is loaded as a string here so we use a simple string funtion to change colors
+// SVG is loaded as a string here so we use a simple string function to change colors
 // color codes (#012345, #56789a, #abcdef) have been chosen to avoid collision with other data
 // but who knows
 $svg = str_replace('#012345', $primaryColor, $svg); 
