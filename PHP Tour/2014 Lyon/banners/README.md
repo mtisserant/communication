@@ -18,10 +18,8 @@ bower install
 
 |   | Windows | Mac OS | Ubuntu |
 |--:|:-------:|:------:|:------:|
-| Chrome  | ✓ | ✓(1) | ✓ |
+| Chrome  | ✓ | ✓ | ✓ |
 | Firefox | ✓ | ✓ | ✓ |
-| IE10 (Windows 7)      | [issue 30](https://github.com/afup/communication/issues/30) | - | - |
-| Safari  | - | [issue 28](https://github.com/afup/communication/issues/28) | - |
+| IE      | ✓ | - | - |
+| Safari  | - | ✓ | - |
 | Opéra   | ✓ | ✓ | ✕ |
-
-✓(1) Pas toujours fonctionnel, même à configuration identique.
