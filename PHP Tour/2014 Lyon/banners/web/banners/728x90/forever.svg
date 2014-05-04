@@ -15,7 +15,7 @@
   </style>
  </defs>
  <g id="layer1">
-  <rect fill="black" class="primary" id="pt_fond" y="0" x="0.40296" ry="5" rx="5" height="90" width="728"/>
+  <rect class="primary" id="pt_fond" y="0" x="0" ry="5" rx="5" height="90" width="728"/>
   <path class="secondary" id="pt_hexagon" d="m98.41407,67.50003l-38.97114,22.49997l-38.97115,-22.49997l0,-44.99995l38.97115,-22.50006l38.97114,22.50006l0,44.99995z"/>
   <g class="secondary" id="pt_phptour_ombre">
    <path id="path3535" d="m112.87956,61.77393l4.49905,0l2,-2l-2,-23.55548l8.08615,0l2,-2l-20.67136,-3.99237l-2,2l0,3.99237l8.08615,0l0,25.55548"/>
