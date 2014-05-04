@@ -32,6 +32,7 @@ $svg = str_replace('#56789a', $secondaryColor, $svg);
 $svg = str_replace('#abcdef', $ternaryColor, $svg); 
 
 $image = new Imagick();
+$image->setBackgroundColor(new ImagickPixel('transparent'));
 $image->readImageBlob($svg);
 $image->setImageFormat("png24");
 
