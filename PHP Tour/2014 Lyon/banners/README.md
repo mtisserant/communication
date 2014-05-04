@@ -2,10 +2,10 @@
 
 Interface simple permettant de créer une bannière web pour le PHP Tour Lyon avec des couleurs personnalisées.
 
-HTML/Javascript uniquement.
-
 ## Installation
  
+Requiert la présence de Image Magick ainsi que de l'extension PECL IMagick.
+
 ```
 bower install
 ```

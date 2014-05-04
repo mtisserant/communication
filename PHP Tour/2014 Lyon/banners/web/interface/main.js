@@ -7,13 +7,24 @@ var bannerSet = {
                 width: 728,
                 height: 90
             },
-            badges: {
-                platinum: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Platine', basename: 'platinum'},
-                gold: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Or', basename: 'gold'},
-                silver: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Argent', basename: 'silver'},
-                bronze: {label: '<span class="glyphicon glyphicon-star"></span> Bronze', basename: 'bronze'},
-                love: {label: '<span class="glyphicon glyphicon-heart"></span> I Love PHP', basename: 'love'},
-                forever: {label: '<span class="glyphicon glyphicon-star-empty"></span> PHP Forever', basename: 'forever'}
+            groups: {
+                sponsor: {
+                    label: 'Sponsors',
+                    badges: {
+                        platinum: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Platine', basename: 'platinum'},
+                        gold: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Or', basename: 'gold'},
+                        silver: {label: '<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span> Argent', basename: 'silver'},
+                        bronze: {label: '<span class="glyphicon glyphicon-star"></span> Bronze', basename: 'bronze'}
+                    }
+                },
+                attendee: {
+                    label: 'Visiteurs',
+                    badges: {
+                        love: {label: '<span class="glyphicon glyphicon-heart"></span> I Love PHP', basename: 'love'},
+                        forever: {label: '<span class="glyphicon glyphicon-star-empty"></span> PHP Forever', basename: 'forever'},
+                        pimp: {label: '<span class="glyphicon glyphicon-fire"></span> Pimp My App', basename: 'pimp'}
+                    }
+                }
             }
         }
     }
@@ -102,6 +113,13 @@ function updateTernaryColor(hex)
 }
 
 function save() {
+    // Google Analytics
+    if(ga != undefined){
+        ga('create', 'UA-33922307-4', 'afup.org');
+        ga('send', 'pageview');
+    };
+
+    // call to generator
     var query = $.param({
         format: '728x90',
         badge: badge,
@@ -121,13 +139,22 @@ Snap.load('banners/728x90/platinum.svg', function(f) {
 });
 
 //badge choice
-var badges = bannerSet.formats.leaderboard.badges;
-for(var prop in badges){
-    $('#step1').append(
-        '<button onclick="loadSvg(this);" value="'+badges[prop].basename+'" class="btn btn-default btn-lg">'
-        +badges[prop].label
-        +'</button> ');
+for(var g in bannerSet.formats.leaderboard.groups){
+    var group = bannerSet.formats.leaderboard.groups[g];
+
+    // heading
+    $('#step1').append('<h4>'+group.label+'</h4>');
+
+    // badges
+    var badges = group.badges;
+    for(var prop in badges){
+        $('#step1').append(
+            '<button onclick="loadSvg(this);" value="'+badges[prop].basename+'" class="btn btn-default btn-lg">'
+            +badges[prop].label
+            +'</button> ');
+    }
 }
+
 
 //theme choice
 for(var prop in presets){

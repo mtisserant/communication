@@ -14,7 +14,7 @@
     ]]></style>
   </defs>
   <g transform="translate(0,-962.36218)" id="layer1">
-    <rect width="728" height="90" rx="5" ry="5" x="0.4029623" y="962.36218" id="pt_fond" class="primary"/>
+    <rect width="728" height="90" rx="5" ry="5" x="0" y="962.36218" id="pt_fond" class="primary"/>
     <path d="m 276.64005,241.62735 -56.83806,32.81547 -56.83807,-32.81547 0,-65.63095 56.83807,-32.81547 56.83806,32.81547 z" transform="matrix(0.68565219,0,0,0.68565219,-91.264788,864.18986)" id="pt_hexagon" class="secondary"/>
     <g id="pt_phptour_ombre" class="secondary">
       <path d="m 112.87956,1024.1361 4.49906,0 2,-2 -2,-23.55546 8.08615,0 2,-2 -20.67136,-3.99241 -2,2 0,3.99241 8.08615,0 0,25.55546" id="path3535"  />
