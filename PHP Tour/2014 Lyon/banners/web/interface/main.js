@@ -113,6 +113,13 @@ function updateTernaryColor(hex)
 }
 
 function save() {
+    // Google Analytics
+    if(ga != undefined){
+        ga('create', 'UA-33922307-4', 'afup.org');
+        ga('send', 'pageview');
+    };
+
+    // call to generator
     var query = $.param({
         format: '728x90',
         badge: badge,
