@@ -1,0 +1,2 @@
+### AFUP Lyon vector logo
+For vector use, prefer [afup_lyon_logo.svg](https://github.com/afup/communication/raw/master/Antennes/Lyon/Logos/afup_lyon_logo.svg). It has been cleaned from vector glitches such as bad overlapping in the middle of buildings…
